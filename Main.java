@@ -32,9 +32,8 @@ public class Main {
         long startTimeP1 = System.currentTimeMillis();
         Iterator <Person> iterator = personLinkedList.iterator();
         while (iterator.hasNext()){
-            if (personLinkedList.contains(iterator.next())){
+                iterator.next();
                 iterator.remove();
-            }
         }
         long stopTimeP1 = System.currentTimeMillis();
         long elapsedTimeP1 = stopTimeP1 - startTimeP1;//191 ms
